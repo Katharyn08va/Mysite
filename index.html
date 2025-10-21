@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>H.U.A.W. LLC – Business & Finance Consulting</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      font-family: Arial, sans-serif;
+      color: white;
+      scroll-behavior: smooth;
+    }
+
+    section {
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 60px;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    }
+
+    section::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; width: 100%; height: 100%;
+      background-color: rgba(0, 0, 0, 0.6);
+      z-index: 1;
+    }
+
+    .content {
+      position: relative;
+      z-index: 2;
+      max-width: 900px;
+    }
+
+    h1, h2, h3, p {
+      margin-bottom: 20px;
+      font-size: 2rem;
+    }
+
+    h1 { font-size: 3rem; }
+    h2 { font-size: 2.5rem; }
+    h3 { font-size: 2rem; }
+    p, li, input, textarea, label { font-size: 1.3rem; }
+
+    .button {
+      display: inline-block;
+      padding: 15px 30px;
+      background-color: #ffffff;
+      color: #000;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+
+    .button:hover {
+      background-color: #f0f0f0;
+    }
+
+    .services, .benefits, .process {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    .services > div, .benefits > div, .process > div {
+      background-color: rgba(255, 255, 255, 0.05);
+      padding: 20px;
+      border-left: 5px solid #fff;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      max-width: 500px;
+    }
+
+    input, textarea {
+      padding: 15px;
+      border: none;
+      border-radius: 5px;
+      width: 100%;
+    }
+
+    input[type="submit"] {
+      background-color: #fff;
+      color: #000;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #f0f0f0;
+    }
+
+    a { color: white; }
+  </style>
+</head>
+<body>
+
+<!-- 1. Hero Section -->
+<section style="background-image: url('https://plus.unsplash.com/premium_photo-1681497584742-f774d04d3914?q=80&w=1170&auto=format&fit=crop');">
+  <div class="content">
+    <h1>H.U.A.W. LLC</h1>
+    <p>We help businesses grow smarter. At H.U.A.W. LLC, we provide tailored consulting solutions in business strategy, financial optimization, and executive operations to help your organization lead with confidence.</p>
+    <a href="#contact" class="button">Contact Us</a>
+  </div>
+</section>
+
+<!-- 2. About Us -->
+<section style="background-color: #1c1c1c;">
+  <div class="content">
+    <h2>Who We Are</h2>
+    <p>H.U.A.W. LLC is a California-based consultancy firm specializing in business, management, and financial advisory services. Our team combines real-world business experience with analytical insight to guide small and mid-sized businesses toward measurable success. We don't believe in templates—only in strategies that move your bottom line. We focus on scalable systems, effective leadership practices, and strong financial frameworks that ensure sustainable growth. </p>
+  </div>
+</section>
+
+<!-- 3. Our Expertise -->
+<section style="background-color: #262626;">
+  <div class="content">
+    <h2>What We Do Best</h2>
+    <div class="services">
+      <div>
+        <h3>Strategic Business Consulting</h3>
+        <p>We help companies clarify goals, streamline operations, and create actionable strategies that align with long-term growth. Every decision starts with data—and ends with results.</p>
+      </div>
+      <div>
+        <h3>Financial Advisory & Planning</h3>
+        <p>From budgeting to capital structure, we provide clarity on your numbers and empower better financial decisions. We make finance work for your business, not against it.</p>
+      </div>
+      <div>
+        <h3>Leadership & Management Solutions</h3>
+        <p>Empowering leadership teams with the tools, structure, and mindset to lead effectively through uncertainty and scale with purpose.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 4. Why Choose Us -->
+<section style="background-color: #333;">
+  <div class="content">
+    <h2>Why H.U.A.W. LLC?</h2>
+    <div class="benefits">
+      <div>
+        <h3>Customized Strategies, Not Templates</h3>
+        <p>We deliver insight and action plans tailored to your specific business goals and challenges—never one-size-fits-all solutions.</p>
+      </div>
+      <div>
+        <h3>Proven Business Insight</h3>
+        <p>We blend strategic thinking with operational know-how, offering advice grounded in real-world business success, not theory.</p>
+      </div>
+      <div>
+        <h3>Results-Driven Partnership</h3>
+        <p>Your goals become our mission. We measure our success by the tangible improvements we help you achieve.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 5. Our Process -->
+<section style="background-color: #1c1c1c;">
+  <div class="content">
+    <h2>How We Work</h2>
+    <div class="process">
+      <div>
+        <h3>1. Discovery & Analysis</h3>
+        <p>We conduct a deep-dive audit into your current business operations, financials, and leadership practices to identify key opportunities.</p>
+      </div>
+      <div>
+        <h3>2. Strategy Development</h3>
+        <p>Based on our findings, we create a strategic roadmap with milestones, metrics, and methods tailored to your specific needs.</p>
+      </div>
+      <div>
+        <h3>3. Implementation & Support</h3>
+        <p>We stay with you through the implementation phase, providing support, adjusting strategies, and ensuring lasting impact.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 6. Contact Us -->
+<section id="contact" style="background-image: url('https://plus.unsplash.com/premium_photo-1661436410104-c3981499f181?q=80&w=1170&auto=format&fit=crop');">
+  <div class="content">
+    <h2>Let’s Get in Touch</h2>
+    <p>Whether you're navigating growth, restructuring, or planning for the future—we're ready to partner with you. Reach out today and take the first step toward real business transformation.</p>
+    <p><strong>Address:</strong> 9065 Pecor Way, Orangevale, CA 95662, United States</p>
+    <p><strong>Email:</strong> <a href="mailto:info@huaw.pro">info@huaw.pro</a></p>
+
+    <form action="mailto:info@huaw.pro" method="post" enctype="text/plain">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Your Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Your Message</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <input type="submit" value="Send Message">
+    </form>
+  </div>
+</section>
+
+</body>
+</html>
